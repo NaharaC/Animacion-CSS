@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// font family
+
+@mixin fonts ($weight) {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: $weight;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+}
+
+.inter-thin {
+    @include fonts (100);
+}
+
+.inter-extralight {
+    @include fonts (200);
+}
+
+.inter-light {
+    @include fonts (300);
+}
+.inter-regular {
+    @include fonts (400);
+}
+.inter-medium {
+    @include fonts (500);
+}
+.inter-semibold {
+    @include fonts (600);
+}
+.inter-bold {
+    @include fonts (700);
+}
+.inter-extrabold {
+    @include fonts (800);
+}
+.inter-black {
+    @include fonts (900);
+}
+
+// colors 
+
+$colors: (
+    "white": #FFFFFF,
+    "dark": #1D232C,
+    "gray": #F3F3F3,
+    "green-1": #EEF357,
+    "green-2": #CFD424,
+);
+
+:root {
+    @each $nameColor, $color in $colors {
+        --color-#{$nameColor}: #{$color};
+    }
+}
+
+@each $nameColor, $color in $colors {
+    .bg-#{$nameColor} {
+        background: var(--color-#{$nameColor});
+    }
+}
+
+@each $nameColor, $color in $colors {
+    .#{$nameColor} {
+        color: var(--color-#{$nameColor});
+    }
+}

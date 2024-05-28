@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.inter-thin {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+.inter-extralight {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+.inter-light {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+.inter-medium {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+.inter-semibold {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+.inter-bold {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+.inter-extrabold {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+.inter-black {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+:root {
+  --color-white: #FFFFFF;
+  --color-dark: #1D232C;
+  --color-gray: #F3F3F3;
+  --color-green-1: #EEF357;
+  --color-green-2: #CFD424;
+}
+
+.bg-white {
+  background: var(--color-white);
+}
+
+.bg-dark {
+  background: var(--color-dark);
+}
+
+.bg-gray {
+  background: var(--color-gray);
+}
+
+.bg-green-1 {
+  background: var(--color-green-1);
+}
+
+.bg-green-2 {
+  background: var(--color-green-2);
+}
+
+.white {
+  color: var(--color-white);
+}
+
+.dark {
+  color: var(--color-dark);
+}
+
+.gray {
+  color: var(--color-gray);
+}
+
+.green-1 {
+  color: var(--color-green-1);
+}
+
+.green-2 {
+  color: var(--color-green-2);
+}/*# sourceMappingURL=style.css.map */
