@@ -122,4 +122,135 @@
 
 .green-2 {
   color: var(--color-green-2);
+}
+
+body {
+  display: grid;
+  grid-template-areas: "header" "presentation" "main" "meetings" "footer";
+}
+body h1 {
+  font-size: 30px;
+}
+body header {
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+body header .logo-icon {
+  display: none;
+}
+body header .logo {
+  width: 35%;
+}
+body header p {
+  display: none;
+}
+body header img {
+  width: 15%;
+}
+body .presentation {
+  grid-area: presentation;
+}
+body .presentation .presentation-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .presentation .presentation-text {
+  padding: 30px;
+}
+body .presentation .presentation-text .divider {
+  height: 2px;
+  width: 75%;
+  margin: 20px 0px;
+}
+body main {
+  grid-area: main;
+}
+body main .container {
+  margin: 30px;
+}
+body main .subcontainer-1 {
+  position: relative;
+  height: 30vh;
+}
+body main .subcontainer-1 img {
+  width: 100%;
+  height: 30vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 1s;
+}
+body main .subcontainer-1 img:hover {
+  transform: scale(1.025);
+}
+body main .subcontainer-1 .wrapper {
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+}
+body main .subcontainer-2 {
+  background-image: url(../imgs/image-4.jpeg);
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: end;
+}
+body main .subcontainer-2 h2 {
+  margin: 20px;
+}
+body main .subcontainer-3 {
+  background-image: url(../imgs/image-3.jpeg);
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: end;
+}
+body main .subcontainer-3 h2 {
+  margin: 20px;
+}
+body main .subcontainer-4 {
+  background-image: url(../imgs/image-6.jpeg);
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: end;
+}
+body main .subcontainer-4 h2 {
+  margin: 20px;
+}
+body main .subcontainer-5 {
+  background-image: url(../imgs/image-2.jpeg);
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: end;
+}
+body main .subcontainer-5 h2 {
+  margin: 20px;
+}
+body main .subcontainer-6 {
+  background-image: url(../imgs/image-8.jpeg);
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: end;
+}
+body main .subcontainer-6 h2 {
+  margin: 20px;
+}
+body .meetings {
+  grid-area: meetings;
+}
+body footer {
+  grid-area: footer;
+  padding: 30px;
 }/*# sourceMappingURL=style.css.map */
