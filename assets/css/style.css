@@ -171,6 +171,9 @@ body .presentation .presentation-img img {
 body .presentation .presentation-text {
   padding: 30px;
 }
+body .presentation .presentation-text p {
+  font-size: 20px;
+}
 body .presentation .presentation-text .divider {
   height: 2px;
   width: 75%;
