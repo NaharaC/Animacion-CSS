@@ -372,4 +372,13 @@ body footer .footer-final-text {
     flex-direction: row;
     justify-content: space-around;
   }
+  body footer .footer-container h3 {
+    font-size: 18px;
+  }
+  body footer .footer-container p {
+    font-size: 16px;
+  }
+  body footer .footer-container .icons {
+    font-size: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */

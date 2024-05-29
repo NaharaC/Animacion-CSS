@@ -385,6 +385,24 @@ body {
                 justify-content: space-around;
             }
         }
+
+        footer {
+        
+            .footer-container {
+        
+                h3 {
+                    font-size: 18px;
+                }
+        
+                p {
+                    font-size: 16px;
+                }
+        
+                .icons {
+                    font-size: 20px;
+                }
+            }
+        }
     }
 }
 
