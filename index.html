@@ -20,15 +20,15 @@
     <header>
         <img class="logo" src="./assets/imgs/logo_dark.png" alt="Logo Iglesia Viña Puerto Montt">
         <img class="logo-icon" src="./assets/imgs/icon_dark.png" alt="Logo Iglesia Viña Puerto Montt">
-        <p class="inter-light">QUIENES SOMOS</p>
-        <p class="inter-light">QUE HACEMOS</p>
-        <p class="inter-light">NUESTRAS REUNIONES</p>
-        <p class="inter-light">¡SÉ PARTE!</p>
-
-        <i class="fa-solid fa-bars"></i>
+        <a class="inter-light" href="#presentation-section">QUIENES SOMOS</a>
+        <a class="inter-light" href="#main-section">QUE HACEMOS</a>
+        <a class="inter-light" href="#meetings-section">NUESTRAS REUNIONES</a>
+        <div class="header-icon">
+            <i class="fa-solid fa-bars"></i>
+        </div>
     </header>
 
-    <section class="presentation">
+    <section class="presentation" id="presentation-section">
         <div class="presentation-img">
             <img src="./assets/imgs/image-1.jpeg" alt="Adoración">
         </div>
@@ -45,6 +45,9 @@
     </section>
 
     <main>
+        <div>
+            <h2 class="inter-semibold" id="main-section">Que hacemos</h2>
+        </div>
         <div class="wrapper">
 
             <div class="card">
@@ -118,7 +121,25 @@
 
     </main>
 
-    <section class="meetings">
+    <section class="meetings" id="meetings-section">
+        <div class="meetings-title bg-dark">
+            <h2 class="white inter-semibold">Nuestras reuniones</h2>
+
+        </div>
+
+        <div class="meetings-wrapper dark">
+            <div class="meetings-card">
+                <h3 class="inter-semibold">Celebración de Reino</h3>
+                <p class="inter-regular">DOMINGO: Online y Presencial</p>
+                <p class="inter-medium">10:30 hrs</p>
+            </div>
+            <div class="meetings-card">
+                <h3 class="inter-semibold">Tarde de Adoración y Gratitud</h3>
+                <p class="inter-regular">MIÉRCOLES: Online y Presencial</p>
+                <p class="inter-medium">19:30 hrs</p>
+
+            </div>
+        </div>
 
     </section>
 

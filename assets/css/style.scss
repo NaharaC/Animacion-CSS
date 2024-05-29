@@ -104,17 +104,23 @@ body {
         .logo {
             width: 35%;
         }
-        p {
+        a {
             display: none;
+            text-decoration: none;
+            color: #1D232C;
         }
 
         img {
             width: 15%;
         }
+
+
     }
 
     .presentation {
         grid-area: presentation;
+        display: flex;
+        flex-direction: column;
 
 
         .presentation-img img {
@@ -141,6 +147,10 @@ body {
     main {
         grid-area: main;
 
+        h2 {
+            margin: 30px 0px 20px 40px;
+        }
+
         .wrapper {
             display: grid;
             justify-items: center;
@@ -148,7 +158,7 @@ body {
             
             .card {
                 margin: 20px;
-                width: 380px;
+                width: 80%;
                 height: 400px;
                 padding: 2rem 1rem;
                 background: #fff;
@@ -213,6 +223,33 @@ body {
 
     .meetings {
         grid-area: meetings;
+        margin: 20px 0px;
+        width: 100%;
+        height: auto;
+        padding: 30px;
+
+        .meetings-title {
+            padding: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .meetings-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .meetings-card {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 20px 0px;
+
+                h3 {
+                    margin-bottom: 10px;
+                }
+            }
+        }
     }
 
     footer {
@@ -256,3 +293,99 @@ body {
         }
     }
 }
+
+@media screen and (min-width: $tablet) {
+    body {
+        grid-template-areas: 
+        "header header"
+        "presentation presentation"
+        "main main"
+        "meetings meetings"
+        "footer footer";
+
+        .wrapper {
+            grid-template-columns: auto auto;
+        }
+    }
+}
+
+@media screen and (min-width:$desktop) {
+    body {
+        grid-template-areas:
+        " header presentation presentation"
+        "header main main"
+        "header meetings meetings"
+        "footer footer footer";
+
+        grid-template-columns: 15% 1fr;
+
+        h1 {
+            font-size: 40px;
+        }
+
+        header {
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+
+            .logo {
+                display: none;
+            }
+
+            .logo-icon {
+                display: block;
+                width: 100%;
+            }
+
+            a {
+                display: block;
+                margin: 20px 0px
+            }
+
+            .header-icon {
+                display: none;
+            }
+        }
+
+        .presentation {
+            flex-direction: row;
+            height: 70vh;
+
+            .presentation-img {
+                width: 50%;
+            }
+
+            .presentation-text {
+                width: 50%;
+                padding: 40px;
+                
+                p {
+                    font-size: 25px;
+                }
+
+                .divider {
+                    margin: 30px 0px;
+                }
+            }
+        }
+        main {
+            h2 {
+                font-size: 30px;
+            }
+
+            .wrapper {
+                grid-template-columns: auto auto auto;
+            }
+        }
+
+        .meetings {
+
+            .meetings-wrapper {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+        }
+    }
+}
+
+
